@@ -9,6 +9,7 @@ import DefaultErrorPage from './components/Errors/DefaultErrorPage';
 import CheckApi from './components/CheckApi';
 import AppLayout from './components/AppLayout';
 import NotFoundPage from './components/Errors/NotFoundPage';
+import VerifyEmail from './components/VerifyEmail';
 
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
 
         <Route path="/login" element={<><CheckApi /><Login /></>} />
         <Route path="/register" element={<><CheckApi /><Register /></>} />
+        <Route path="/verify-email" element={<><CheckApi /><VerifyEmail /></>} />
 
         <Route path="*" element={
           <>
